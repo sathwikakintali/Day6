@@ -34,11 +34,7 @@ public class PersonSortingExample {
         personList.add(new Person("Alice", 30, 50000.0));
         personList.add(new Person("Bob", 25, 60000.0));
         personList.add(new Person("Charlie", 22, 55000.0));
-
-        // Sort by age in ascending order using lambda expression
-        Collections.sort(personList, Comparator.comparingInt(Person::getAge));
-
-        // Print the sorted list
+  Collections.sort(personList, Comparator.comparingInt(Person::getAge));
         for (Person person : personList) {
             System.out.println(person);
         }
